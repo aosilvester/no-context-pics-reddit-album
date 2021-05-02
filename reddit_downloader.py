@@ -17,7 +17,7 @@ for post in no_context_pics:
     # check if retrieved successfully. 200 == success
     if r.status_code == 200:
         # Set decode_content value to True, otherwise the downloaded image file's size will be zero.
-        r.raw.decode_content = True
+        r.raw.decode_content = True 
 
         with open('/Users/aosil/Repositories/fun-projects/no-context-pics-reddit-album/downloaded_images/' + filename,'wb') as f:
             shutil.copyfileobj(r.raw, f)
